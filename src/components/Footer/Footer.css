@@ -1,0 +1,120 @@
+.footer {
+  padding-top: 40px;
+  background-color: var(--main-color);
+  color: #fff;
+}
+
+.footer li a{
+  color: #fff;
+  text-decoration: none;
+}
+.copyRight {
+  position: relative;
+  text-align: center;
+  margin-top: 5px;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+.copyRight::before {
+  content: "";
+  position: absolute;
+  width: 80%;
+  height: 2px;
+  background-color: var(--secondary-color);
+  left: 50%;
+  transform: translateX(-50%);
+  top: 0;
+}
+.important-links li {
+  font-weight: bold;
+  font-size: 20px;
+}
+li:not(:first-child){
+    margin-top: 20px;
+}
+.social-icons-footer{
+  display: flex;
+  margin-left: 30px;
+  justify-content: center;
+  margin-top: 10px;
+}
+.social-icons-footer .social-icon{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  width: 40px;
+  height:40px;
+  background-color: var(--secondary-color);
+  border-radius: 50%;
+  padding: 5px;
+  font-size: 16px;
+  margin: 10px 10px;
+}
+@media(max-width:820px){
+  .footer{
+    padding-top: 0;
+  }
+  .footer  .container{
+    display: none;
+  }
+  .social-icons-footer{
+    margin-top: 50px;
+  }
+  .copyRight{
+    margin-top: 0;
+  }
+}
+.footer-search{
+  position: relative;
+  margin: auto;
+}
+.footer-search input::placeholder {
+  letter-spacing: 2px;
+  color: var(--main-color);
+  font-weight: 500;
+}
+.footer-search .search-btn {
+  position: absolute;
+  background-color: var(--main-color);
+  width: 35px;
+  height: 35px;
+  padding: 7.5px;
+  border-radius: 50%;
+  right: 2%;
+  top: 12%;
+}
+.footer-search input {
+  display: block;
+  margin: auto;
+  width: 100%;
+  padding: 10px 20px;
+  border-radius: 25px;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  caret-color: var(--main-color);
+}
+.view-programs-when-search-footer{
+  display: none;
+  padding: 15px;
+  border-radius: 10px;
+  right:20%;
+  top:-10%;
+  transform: translateY(-50%);
+  position: absolute;
+  background-color: #fff;
+  height:fit-content;
+
+}
+.view-programs-when-search-footer a{
+  display: block;
+  position: relative;
+  color: var(--main-color) !important;
+  text-decoration: none;
+  text-align: center;
+  transition: var(--main-transition);
+}
+.view-programs-when-search-footer li a:hover{
+  color: var(--secondary-color) !important;
+}
